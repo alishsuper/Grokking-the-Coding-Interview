@@ -14,17 +14,17 @@ A brute-force algorithm will calculate the sum of every 5-element contiguous sub
 
 The efficient way to solve this problem would be to visualize each contiguous subarray as a sliding window of `‘5’` elements. This means that we will slide the window by one element when we move on to the next subarray. To reuse the sum from the previous subarray, we will subtract the element going out of the window and add the element now being included in the sliding window. This will save us from going through the whole subarray to find the sum and, as a result, the algorithm complexity will reduce to `O(N)`.
 
-- Maximum Sum Subarray of Size K (easy)
-- Smallest Subarray with a given sum (easy)
-- Longest Substring with K Distinct Characters (medium)
-- Fruits into Baskets (medium)
-- No-repeat Substring (hard) *
-- Longest Substring with Same Letters after Replacement (hard)
-- Longest Subarray with Ones after Replacement (hard) *
-- Problem Challenge 1 - Permutation in a String (hard) *
-- Problem Challenge 2 - String Anagrams (hard)
-- Problem Challenge 3 - Smallest Window containing Substring (hard) *
-- Problem Challenge 4 - Words Concatenation (hard) 
+- Maximum Sum Subarray of Size K (easy) https://www.geeksforgeeks.org/find-maximum-minimum-sum-subarray-size-k/
+- Smallest Subarray with a given sum (easy) https://leetcode.com/problems/minimum-size-subarray-sum/
+- Longest Substring with K Distinct Characters (medium) https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
+- Fruits into Baskets (medium) https://leetcode.com/problems/fruit-into-baskets/
+- No-repeat Substring (hard) * https://leetcode.com/problems/longest-substring-without-repeating-characters/
+- Longest Substring with Same Letters after Replacement (hard) https://leetcode.com/problems/longest-repeating-character-replacement/
+- Longest Subarray with Ones after Replacement (hard) * https://leetcode.com/problems/max-consecutive-ones-iii/
+- Problem Challenge 1 - Permutation in a String (hard) * https://leetcode.com/problems/permutation-in-string/
+- Problem Challenge 2 - String Anagrams (hard) https://leetcode.com/problems/find-all-anagrams-in-a-string/
+- Problem Challenge 3 - Smallest Window containing Substring (hard) * https://leetcode.com/problems/minimum-window-substring/
+- Problem Challenge 4 - Words Concatenation (hard) https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 
 ## Pattern 2: Two Pointer
 
