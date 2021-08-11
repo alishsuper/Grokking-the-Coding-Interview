@@ -1,6 +1,6 @@
 # Grokking the Coding Interview in 16 Patterns
 
-## Pattern 1: Sliding Window
+# Pattern 1: Sliding Window
 
 They are subsets of dynamic programming problems, through the approach to solving them is quite different from the one in solving *tabulation* and *memoization* problems.
 
@@ -80,28 +80,57 @@ Dead giveaway:
 - Problem Challenge 3 - Smallest Window containing Substring (hard) * https://leetcode.com/problems/minimum-window-substring/
 - Problem Challenge 4 - Words Concatenation (hard) https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 
-## Pattern 2: Two Pointer
+# Pattern 2: Two Pointer
 
-In problems where we deal with sorted arrays (or LinkedLists) and need to find a set of elements that fulfill certain constraints, the Two Pointers approach becomes quite useful. The set of elements could be a pair, a triplet or even a subarray. For example, take a look at the following problem:
+## How do you identify ??
 
-> Given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target.
+Two pointer technique is normally used for searching and it uses two pointer in one loop over the given data structure.
 
-To solve this problem, we can consider each element one by one (pointed out by the first pointer) and iterate through the remaining elements (pointed out by the second pointer) to find a pair with the given sum. The time complexity of this algorithm will be `O(N^2)` where `‘N’` is the number of elements in the input array.
+In order to use two pointers, most of the times the ***data structure needs to be ordered in some way***, which helps us to reduce the time complexity from **O(n<sup>2</sup>)** or **O(n<sup>3</sup>)** to **O(n)** of just one loop with two pointers and search each item just one time.
 
-Given that the input array is sorted, an efficient way would be to start with one pointer in the beginning and another pointer at the end. At every step, we will see if the numbers pointed by the two pointers add up to the target sum. If they do not, we will do one of two things:
-1. If the sum of the two numbers pointed by the two pointers is greater than the target sum, this means that we need a pair with a smaller sum. So, to try more pairs, we can decrement the end-pointer.
-2. If the sum of the two numbers pointed by the two pointers is smaller than the target sum, this means that we need a pair with a larger sum. So, to try more pairs, we can increment the start-pointer.
+So depending on whether the input string is sorted or not, the two-pointer can take **O(n log n)** time complexity or even better which is **O(n)**.
 
-- Pair with Target Sum (easy)
-- Remove Duplicates (easy)
-- Squaring a Sorted Array (easy)
-- Triplet Sum to Zero (medium)
-- Triplet Sum Close to Target (medium)
-- Triplets with Smaller Sum (medium)
-- Subarrays with Product Less than a Target (medium) *
-- Problem Challenge 1 - Quadruple Sum to Target (medium) *
-- Problem Challenge 2 - Comparing Strings containing Backspaces (medium)
-- Problem Challenge 3 - Minimum Window Sort (medium) *
+## Types of two-pointers
+
+1. **Opposite Directional**: One pointer starts from the beginning while the other pointer starts from the end. They move toward each other until they both meet or some condition satisfy.
+   ![](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/two-pointers/assets/opposite-directional-2-pointers.svg)
+   
+   
+   
+2. **Equi-Directional**: Both start from the beginning, one slow-runner and the other is fast-runner.
+   ![](https://raw.githubusercontent.com/aditya109/Grokking-The-Coding-Interview/main/two-pointers/assets/equi-directional-2-pointers.svg)
+
+## Description
+
+Given a sort array A, having N integers, find if there exists any pair of elements (A[i], A[j]) such that their sum is equal to X
+
+```pseudocode
+function isPairSum(A[], arrayLength, targetSum)
+	startPointer := 0
+	endPointer := arrayLength - 1
+	
+	while startPointer < endPointer
+		if A[i] + A[j] == targetSum
+			return True
+		else if A[i] + A[j] < targetSum
+			startPointer += 1
+		else endPointer -= 1
+	return False
+```
+
+Time Complexity: **O(N)**
+
+- Pair with Target Sum (easy) https://leetcode.com/problems/two-sum/
+- Remove Duplicates (easy) https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+- Squaring a Sorted Array (easy) https://leetcode.com/problems/squares-of-a-sorted-array/
+- Triplet Sum to Zero (medium) https://leetcode.com/problems/3sum/
+- Triplet Sum Close to Target (medium) https://leetcode.com/problems/3sum-closest/
+- Triplets with Smaller Sum (medium) https://leetcode.com/problems/3sum-smaller/
+- Subarrays with Product Less than a Target (medium) https://leetcode.com/problems/subarray-product-less-than-k/
+- Dutch National Flag Problem (medium) https://leetcode.com/problems/sort-colors/
+- Problem Challenge 1 - Quadruple Sum to Target (medium) https://leetcode.com/problems/4sum/
+- Problem Challenge 2 - Comparing Strings containing Backspaces (medium) https://leetcode.com/problems/backspace-string-compare/
+- Problem Challenge 3 - Minimum Window Sort (medium) https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 
 ## Pattern 3: Fast & Slow pointers
 
@@ -111,13 +140,13 @@ By moving at different speeds (say, in a cyclic LinkedList), the algorithm prove
 
 One of the famous problems solved using this technique was <b>Finding a cycle in a LinkedList</b>. Let’s jump onto this problem to understand the <b>Fast & Slow</b> pattern.
 
-- LinkedList Cycle (easy)
-- Middle of the LinkedList (easy)
-- Start of LinkedList Cycle (medium) *
-- Happy Number (medium) * 
-- Problem Challenge 1 - Palindrome LinkedList (medium) *
-- Problem Challenge 2 - Rearrange a LinkedList (medium)
-- Problem Challenge 3 - Cycle in a Circular Array (hard) *
+- LinkedList Cycle (easy) https://leetcode.com/problems/linked-list-cycle/
+- Middle of the LinkedList (easy) https://leetcode.com/problems/middle-of-the-linked-list/
+- Start of LinkedList Cycle (medium) https://leetcode.com/problems/linked-list-cycle-ii/
+- Happy Number (medium) https://leetcode.com/problems/happy-number/
+- Problem Challenge 1 - Palindrome LinkedList (medium) https://leetcode.com/problems/palindrome-linked-list/
+- Problem Challenge 2 - Rearrange a LinkedList (medium) https://leetcode.com/problems/reorder-list/
+- Problem Challenge 3 - Cycle in a Circular Array (hard) https://leetcode.com/problems/circular-array-loop/
 
 ## Pattern 4: Merge Intervals
 
