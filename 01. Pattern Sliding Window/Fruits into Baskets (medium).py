@@ -22,26 +22,18 @@ This can be done if we start with the second letter: ['B', 'C', 'B', 'B', 'C']
 
 #mycode
 def fruits_into_baskets(fruits):
-  max_len, win_start = 0, 0
-  dict_fruits={}
-
-  for win_end in range(len(fruits)):
-    if fruits[win_end] not in dict_fruits:
-      dict_fruits[fruits[win_end]] = 1
-    else: 
-      dict_fruits[fruits[win_end]] += 1
-    
-    while len(dict_fruits) >2:
-      if dict_fruits[fruits[win_start]] == 1:
-        del dict_fruits[fruits[win_start]]
-      else:
-        dict_fruits[fruits[win_start]] -= 1
-      win_start += 1 
-
-    if len(dict_fruits) == 2:
-      max_len=max(max_len, sum(dict_fruits.values()))
-      
-  return max_len
+  left = 0
+  max_length = 0
+  hash_map = defaultdict(int)
+  for right, fruit in enumerate(fruits):
+      hash_map[fruit] += 1
+      while len(hash_map) > 2:
+          hash_map[fruits[left]] -= 1
+          if hash_map[fruits[left]] == 0:
+              del hash_map[fruits[left]]
+          left += 1
+      max_length = max(max_length, right - left + 1)
+  return max_length
 
 
 #answer
@@ -92,4 +84,3 @@ Given a string, find the length of the longest substring in it with at most two 
 
 Solution: This problem is exactly similar to our parent problem.
 '''
-
