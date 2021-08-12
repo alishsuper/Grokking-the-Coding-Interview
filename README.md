@@ -430,53 +430,144 @@ step1_result = 4 ^ 1 ^ 2 ^ 6 ^ 8 ^ 5 ^ 3 ^ 9
 - Single Number (easy) https://leetcode.com/problems/single-number/
 - Two Single Numbers (medium) https://leetcode.com/problems/single-number-iii/
 - Complement of Base 10 Number (medium) https://leetcode.com/problems/number-complement/
-- Problem Challenge 1
+- Problem Challenge 1 https://leetcode.com/problems/flipping-an-image/
 
-## Pattern 13: Top 'K' Elements
+# Pattern 13: Top 'K' Elements
 
 Any problem that asks us to find the top/smallest/frequent ‘K’ elements among a given set falls under this pattern.
 
 The best data structure that comes to mind to keep track of ‘K’ elements is Heap. This pattern will make use of the Heap to solve multiple problems dealing with ‘K’ elements at a time from a set of given elements.
 
-- Top 'K' Numbers (easy)
-- Kth Smallest Number (easy)
-- 'K' Closest Points to the Origin (easy)
-- Connect Ropes (easy) *
+### Example Problems
+- Top 'K' Numbers (easy) https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
+- Kth Smallest Number (easy) https://leetcode.com/problems/kth-largest-element-in-an-array/
+- 'K' Closest Points to the Origin (easy) https://leetcode.com/problems/k-closest-points-to-origin/
+- Connect Ropes (easy) https://leetcode.com/problems/minimum-cost-to-connect-sticks/
 - Top 'K' Frequent Numbers (medium)
-- Frequency Sort (medium) *
-- Kth Largest Number in a Stream (medium)
-- 'K' Closest Numbers (medium)
-- Maximum Distinct Elements (medium)
-- Sum of Elements (medium) 
-- Rearrange String (hard)
-- Problem Challenge 1 - Rearrange String K Distance Apart (hard) 
-- Problem Challenge 2 - Scheduling Tasks (hard) *
-- Problem Challenge 3 - Frequency Stack (hard) 
+- Frequency Sort (medium) https://leetcode.com/problems/sort-characters-by-frequency/
+- Kth Largest Number in a Stream (medium) https://leetcode.com/problems/kth-largest-element-in-a-stream/
+- 'K' Closest Numbers (medium) https://leetcode.com/problems/find-k-closest-elements/
+- Maximum Distinct Elements (medium) https://www.geeksforgeeks.org/maximum-distinct-elements-removing-k-elements/
+- Sum of Elements (medium) https://www.geeksforgeeks.org/sum-elements-k1th-k2th-smallest-elements/
+- Rearrange String (hard) https://leetcode.com/problems/reorganize-string/
+- Problem Challenge 1 - Rearrange String K Distance Apart (hard) https://leetcode.com/problems/rearrange-string-k-distance-apart/
+- Problem Challenge 2 - Scheduling Tasks (hard) https://leetcode.com/problems/task-scheduler/
+- Problem Challenge 3 - Frequency Stack (hard) https://leetcode.com/problems/maximum-frequency-stack
 
-## Pattern 14: K-way merge
+# Pattern 14: K-way merge
 
-- Merge K Sorted Lists (medium) *
-- Kth Smallest Number in M Sorted Lists (Medium) 
-- Kth Smallest Number in a Sorted Matrix (Hard) *
-- Smallest Number Range (Hard) *
-- Problem Challenge 1 - K Pairs with Largest Sums (Hard) 
+### Example Problems
+- Merge K Sorted Lists (medium) https://leetcode.com/problems/merge-k-sorted-lists/
+- Kth Smallest Number in M Sorted Lists (Medium) https://www.geeksforgeeks.org/find-m-th-smallest-value-in-k-sorted-arrays/
+- Kth Smallest Number in a Sorted Matrix (Hard) https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
+- Smallest Number Range (Hard) https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/
+- Problem Challenge 1 - K Pairs with Largest Sums (Hard) https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
 
-## 15. Pattern : 0/1 Knapsack (Dynamic Programming)
-- 0/1 Knapsack (medium)
-- Equal Subset Sum Partition (medium) *
-- Subset Sum (medium)
-- Minimum Subset Sum Difference (hard) *
-- Problem Challenge 1 - Count of Subset Sum (hard) 
-- Problem Challenge 2 - Target Sum (hard) 
+# 15. Pattern : 0/1 Knapsack (Dynamic Programming)
 
-## 16. Pattern: Topological Sort (Graph)
-- Topological Sort (medium) *
-- Tasks Scheduling (medium)
-- Tasks Scheduling Order (medium)
-- All Tasks Scheduling Orders (hard) *
-- Alien Dictionary (hard) 
-- Problem Challenge 1 - Reconstructing a Sequence (hard) *
-- Problem Challenge 2 - Minimum Height Trees (hard) *
+In the 0-1 Knapsack problem, we are given a set of items, each with a weight and a value, and we need to determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.
+
+**Note**: We can either take an item or not (0-1 property). For example,
+
+```
+Input:
+
+value = [ 20, 5, 10, 40, 15, 25 ]
+weight = [ 1, 2, 3, 8, 7, 4 ]
+W = 10
+ 
+Output: Knapsack value is 60
+ 
+value = 20 + 40 = 60
+weight = 1 + 8 = 9 < W
+```
+
+The idea is to use recursion to solve this problem. For each item, there are two possibilities:
+
+1. Include the current item in the knapsack and recur for remaining items with knapsack's decreased capacity. If the capacity becomes negative, do not recur or return `-INFINITY`.
+2. Exclude the current item from the knapsack and recur for the remaining items.
+
+Finally, return the maximum value we get by including or excluding the current item. The base case of the recursion would be when no items are left, or capacity becomes 0.
+
+`Recursive Solution` -> `Choice Diagram`
+
+![]()
+
+
+
+
+
+
+
+```python
+
+```
+
+
+### Example Problems
+- 0/1 Knapsack (medium) https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
+- Equal Subset Sum Partition (medium) https://leetcode.com/problems/partition-equal-subset-sum/
+- Subset Sum (medium) https://www.geeksforgeeks.org/subset-sum-problem-dp-25/
+- Minimum Subset Sum Difference (hard) https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/
+- Problem Challenge 1 - Count of Subset Sum (hard) https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x/
+- Problem Challenge 2 - Target Sum (hard) https://leetcode.com/problems/target-sum/
+
+# 16. Pattern: Topological Sort (Graph)
+
+A topological ordering is an ordering of the nodes in a directed graph where for each directed edge from node A to node B, node A appears before node B in the ordering.
+
+Time complexity : **O(V+E)**
+
+> Topological ordering are not unique.
+
+## Directed Acyclic Graphs (DAG)
+
+Not every graph can have a topological ordering. A graph which contains a cycle cannot have a valid ordering.
+
+The only type of graph which has a valid topological ordering is a **Directed Acyclic Graph(DAG)** (graphs with directed edges and no cycle).
+
+> How do I verify that my graph does not contain a directed cycle?
+>
+> - One method is to use Tarjan's strongly connected component algorithm which can be used to find these cycles.
+
+By definition, all rooted trees have a topological ordering since they do not contain any cycles.
+
+```
+1. Pick an unvisited node.
+2. Beginning with the selected node, do a DFS exploring only unvisited nodes.
+3. On the recursive callback of the DFS, add the current node to the topological ordering in the reverse order.
+```
+
+
+
+```pseudocode
+visited = set()
+outputStack = []
+function dfs:
+	Pass In: graph, node
+	if node not in visited
+		visited.add(node)
+		for neighbour in graph[node]
+			dfs(graph, neighbour)
+		outputStack.insert(0, node)
+	Pass Out: None
+function topsort(graph):
+	Pass In: graph
+	for node in graph
+		dfs(graph, node)
+	Pass Out: None
+```
+
+### Example Problems
+- Topological Sort (medium) https://www.geeksforgeeks.org/topological-sorting/
+- Tasks Scheduling (medium) https://leetcode.com/problems/course-schedule/
+- Tasks Scheduling Order (medium) https://leetcode.com/problems/course-schedule-ii/
+- All Tasks Scheduling Orders (hard) https://leetcode.com/problems/course-schedule-ii/ (output all possible solutions)
+- Alien Dictionary (hard) https://leetcode.com/problems/alien-dictionary/
+- Problem Challenge 1 - Reconstructing a Sequence (hard) https://leetcode.com/problems/sequence-reconstruction/
+- Problem Challenge 2 - Minimum Height Trees (hard) https://leetcode.com/problems/minimum-height-trees/
 
 ## 17. Miscellaneous
-- Kth Smallest Number (hard) *
+
+### Example Problems
+- Kth Smallest Number (hard) https://leetcode.com/problems/kth-largest-element-in-an-array/
