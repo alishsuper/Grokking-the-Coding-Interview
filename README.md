@@ -120,6 +120,7 @@ function isPairSum(A[], arrayLength, targetSum)
 
 Time Complexity: **O(N)**
 
+### Example Problems
 - Pair with Target Sum (easy) https://leetcode.com/problems/two-sum/
 - Remove Duplicates (easy) https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 - Squaring a Sorted Array (easy) https://leetcode.com/problems/squares-of-a-sorted-array/
@@ -132,7 +133,7 @@ Time Complexity: **O(N)**
 - Problem Challenge 2 - Comparing Strings containing Backspaces (medium) https://leetcode.com/problems/backspace-string-compare/
 - Problem Challenge 3 - Minimum Window Sort (medium) https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 
-## Pattern 3: Fast & Slow pointers
+# Pattern 3: Fast & Slow pointers
 
 The <b>Fast & Slow</b> pointer approach, also known as the <b>Hare & Tortoise algorithm</b>, is a pointer algorithm that uses two pointers which move through the array (or sequence/LinkedList) at different speeds. This approach is quite useful when dealing with cyclic LinkedLists or arrays.
 
@@ -140,6 +141,7 @@ By moving at different speeds (say, in a cyclic LinkedList), the algorithm prove
 
 One of the famous problems solved using this technique was <b>Finding a cycle in a LinkedList</b>. Let’s jump onto this problem to understand the <b>Fast & Slow</b> pattern.
 
+### Example Problems
 - LinkedList Cycle (easy) https://leetcode.com/problems/linked-list-cycle/
 - Middle of the LinkedList (easy) https://leetcode.com/problems/middle-of-the-linked-list/
 - Start of LinkedList Cycle (medium) https://leetcode.com/problems/linked-list-cycle-ii/
@@ -148,7 +150,7 @@ One of the famous problems solved using this technique was <b>Finding a cycle in
 - Problem Challenge 2 - Rearrange a LinkedList (medium) https://leetcode.com/problems/reorder-list/
 - Problem Challenge 3 - Cycle in a Circular Array (hard) https://leetcode.com/problems/circular-array-loop/
 
-## Pattern 4: Merge Intervals
+# Pattern 4: Merge Intervals
 
 This pattern describes an efficient technique to deal with overlapping intervals. In a lot of problems involving intervals, we either need to find overlapping intervals or merge intervals if they overlap.
 
@@ -163,15 +165,16 @@ Given two intervals (`a` and `b`), there will be six different ways the two inte
 Understanding the above six cases will help us in solving all intervals related problems.
 ![](mergeintervals.png)
 
-- Merge Intervals (medium)
-- Insert Interval (medium) *
-- Intervals Intersection (medium)
-- Conflicting Appointments (medium)
-- Problem Challenge 1 - Minimum Meeting Rooms (hard) *
-- Problem Challenge 2 - Maximum CPU Load (hard)
-- Problem Challenge 3 - Employee Free Time (hard) *
+### Example Problems
+- Merge Intervals (medium) https://leetcode.com/problems/merge-intervals/
+- Insert Interval (medium) https://leetcode.com/problems/insert-interval/
+- Intervals Intersection (medium) https://leetcode.com/problems/interval-list-intersections/
+- Conflicting Appointments (medium) https://leetcode.com/problems/meeting-rooms/
+- Problem Challenge 1 - Minimum Meeting Rooms (hard) https://leetcode.com/problems/meeting-rooms-ii/
+- Problem Challenge 2 - Maximum CPU Load (hard) https://leetcode.com/discuss/interview-question/algorithms/124554/Find-Max-Bandwidth
+- Problem Challenge 3 - Employee Free Time (hard) https://leetcode.com/problems/employee-free-time/
 
-## Pattern 5: Cyclic Sort
+# Pattern 5: Cyclic Sort
 
 This pattern describes an interesting approach to deal with problems involving arrays containing numbers in a given range. For example, take the following problem:
 
@@ -180,103 +183,253 @@ This pattern describes an interesting approach to deal with problems involving a
 To efficiently solve this problem, we can use the fact that the input array contains numbers in the range of `1` to `‘n’`. 
 For example, to efficiently sort the array, we can try placing each number in its correct place, i.e., placing `‘1’` at index `‘0’`, placing `‘2’` at index `‘1’`, and so on. Once we are done with the sorting, we can iterate the array to find all indices that are missing the correct numbers. These will be our required numbers.
 
-- Cyclic Sort (easy)
-- Find the Missing Number (easy)
-- Find all Missing Numbers (easy)
-- Find the Duplicate Number (easy)
-- Find all Duplicate Numbers (easy)
-- Problem Challenge 1 - Find the Corrupt Pair (easy)
-- Problem Challenge 2 - Find the Smallest Missing Positive Number (medium)
-- Problem Challenge 3 - Find the First K Missing Positive Numbers (hard) *
+### Example Problems
+- Cyclic Sort (easy) https://www.geeksforgeeks.org/cycle-sort/
+- Find the Missing Number (easy) https://leetcode.com/problems/missing-number/
+- Find all Missing Numbers (easy) https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+- Find the Duplicate Number (easy) https://leetcode.com/problems/find-the-duplicate-number/
+- Find all Duplicate Numbers (easy) https://leetcode.com/problems/find-all-duplicates-in-an-array/
+- Problem Challenge 1 - Find the Corrupt Pair (easy) https://leetcode.com/problems/set-mismatch/
+- Problem Challenge 2 - Find the Smallest Missing Positive Number (medium) https://leetcode.com/problems/first-missing-positive/
+- Problem Challenge 3 - Find the First K Missing Positive Numbers (hard) https://www.geeksforgeeks.org/find-first-k-natural-numbers-missing-given-array/
 
-## Pattern 6: In-place Reversal of a LinkedList
+# Pattern 6: In-place Reversal of a LinkedList
 
 In a lot of problems, we are asked to reverse the links between a set of nodes of a <b>LinkedList</b>. Often, the constraint is that we need to do this in-place, i.e., using the existing node objects and without using extra memory.
 
 <b>In-place Reversal of a LinkedList pattern</b> describes an efficient way to solve the above problem.
 
-- Reverse a LinkedList (easy) 
-- Reverse a Sub-list (medium) 
-- Reverse every K-element Sub-list (medium) *
-- Problem Challenge 1 - Reverse alternating K-element Sub-list (medium)
-- Problem Challenge 2 - Rotate a LinkedList (medium)
+### Example Problems
+- Reverse a LinkedList (easy) https://leetcode.com/problems/reverse-linked-list/
+- Reverse a Sub-list (medium) https://leetcode.com/problems/reverse-linked-list-ii/
+- Reverse every K-element Sub-list (medium) https://leetcode.com/problems/reverse-nodes-in-k-group/
+- Problem Challenge 1 - Reverse alternating K-element Sub-list (medium) https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/
+- Problem Challenge 2 - Rotate a LinkedList (medium) https://leetcode.com/problems/rotate-list/
 
-## Pattern 7: Tree Breadth First Search
+# Pattern 7: Tree Breadth First Search
 This pattern is based on the <b>Breadth First Search (BFS)</b> technique to traverse a tree.
 
 Any problem involving the traversal of a tree in a level-by-level order can be efficiently solved using this approach. We will use a <b>Queue</b> to keep track of all the nodes of a level before we jump onto the next level. This also means that the space complexity of the algorithm will be `O(W)`, where `W` is the maximum number of nodes on any level.
 
-- Binary Tree Level Order Traversal (easy)
-- Reverse Level Order Traversal (easy) * 
-- Zigzag Traversal (medium)
-- Level Averages in a Binary Tree (easy)
-- Minimum Depth of a Binary Tree (easy) 
-- Level Order Successor (easy)
-- Connect Level Order Siblings (medium)
-- Problem Challenge 1 - Connect All Level Order Siblings (medium)
-- Problem Challenge 2 - Right View of a Binary Tree (easy) 
+All connections connected to a node is checked at one time.
 
-## Pattern 8: Depth First Search (DFS)
+![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/06/tree12.gif)
+
+```
+BFS of above Tree
+
+Breadth First Traversal : 1 2 3 4 5
+```
+
+```pseudocode
+FUNCTION traverseTreeInBFS
+	passIn: root
+	if root == None
+		return
+	queue = Queue()
+	queue.enqueue(root)
+	while isEmpty(queue) == False
+		e = queue.deque()
+		print(e)
+		
+		if e.left != None:
+			queue.enqueue(e.left)
+		if e.right != None:
+			queue.enqueue(e.right)
+	passOut: None
+```
+
+### Example Problems
+- Binary Tree Level Order Traversal (easy) https://leetcode.com/problems/binary-tree-level-order-traversal/
+- Reverse Level Order Traversal (easy) https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
+- Zigzag Traversal (medium) https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+- Level Averages in a Binary Tree (easy) https://leetcode.com/problems/average-of-levels-in-binary-tree/
+- Minimum Depth of a Binary Tree (easy) https://leetcode.com/problems/minimum-depth-of-binary-tree/, https://leetcode.com/problems/maximum-depth-of-binary-tree/
+- Level Order Successor (easy) https://www.geeksforgeeks.org/level-order-successor-of-a-node-in-binary-tree/
+- Connect Level Order Siblings (medium) https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+- Problem Challenge 1 - Connect All Level Order Siblings (medium) https://www.educative.io/m/connect-all-siblings
+- Problem Challenge 2 - Right View of a Binary Tree (easy) https://leetcode.com/problems/binary-tree-right-side-view/
+
+# Pattern 8: Depth First Search (DFS)
 
 This pattern is based on the <b>Depth First Search (DFS)</b> technique to traverse a tree.
 
 We will be using recursion (or we can also use a stack for the iterative approach) to keep track of all the previous (parent) nodes while traversing. This also means that the space complexity of the algorithm will be `O(H)`, where `‘H’` is the maximum height of the tree.
 
-- Binary Tree Path Sum (easy)
-- All Paths for a Sum (medium) *
-- Sum of Path Numbers (medium)
-- Path With Given Sequence (medium) *
-- Count Paths for a Sum (medium)
-- Problem Challenge 1 - Tree Diameter (medium) *
-- Problem Challenge 2 - Path with Maximum Sum (hard) *
+### Example Problems
+- Binary Tree Path Sum (easy) https://leetcode.com/problems/path-sum/
+- All Paths for a Sum (medium) https://leetcode.com/problems/path-sum-ii/, https://leetcode.com/problems/binary-tree-paths/
+- Sum of Path Numbers (medium) https://leetcode.com/problems/sum-root-to-leaf-numbers/
+- Path With Given Sequence (medium) https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/
+- Count Paths for a Sum (medium) https://leetcode.com/problems/path-sum-iii/
+- Problem Challenge 1 - Tree Diameter (medium) https://leetcode.com/problems/diameter-of-binary-tree/
+- Problem Challenge 2 - Path with Maximum Sum (hard) https://leetcode.com/problems/binary-tree-maximum-path-sum/
 
-## Pattern 9: Two Heaps
+# Pattern 9: Two Heaps
 
 In many problems, where we are given a set of elements such that we can divide them into two parts. To solve the problem, we are interested in knowing the smallest element in one part and the biggest element in the other part. This pattern is an efficient approach to solve such problems.
 
 This pattern uses two <b>Heaps</b> to solve these problems; A <b>Min Heap</b> to find the smallest element and a <b>Max Heap</b> to find the biggest element.
 
-- Find the Median of a Number Stream (medium) 
-- Sliding Window Median (hard) *
-- Maximize Capital (hard) * 
-- Problem Challenge 1 - Next Interval (hard) 
+### Example Problems
+- Find the Median of a Number Stream (medium) https://leetcode.com/problems/find-median-from-data-stream/
+- Sliding Window Median (hard) https://leetcode.com/problems/sliding-window-median/
+- Maximize Capital (hard) https://leetcode.com/problems/ipo/
+- Problem Challenge 1 - Next Interval (hard) https://leetcode.com/problems/find-right-interval/
 
-## Pattern 10: Subsets
+# Pattern 10: Subsets
 
 A huge number of coding interview problems involve dealing with <b>Permutations</b> and <b>Combinations</b> of a given set of elements. This pattern describes an efficient <b>Breadth First Search (BFS)</b> approach to handle all these problems.
 
-- Subsets (easy)
-- Subsets With Duplicates (easy) *
-- Permutations (medium) *
-- String Permutations by changing case (medium)
-- Balanced Parentheses (hard) *
-- Unique Generalized Abbreviations (hard) * 
-- Problem Challenge 1 - Evaluate Expression (hard) *
-- Problem Challenge 2 - Structurally Unique Binary Search Trees (hard) *
-- Problem Challenge 3 - Count of Structurally Unique Binary Search Trees (hard)
+### Example Problems
+- Subsets (easy) https://leetcode.com/problems/subsets/
+- Subsets With Duplicates (easy) https://leetcode.com/problems/subsets-ii/
+- Permutations (medium) https://leetcode.com/problems/permutations/
+- String Permutations by changing case (medium) https://leetcode.com/problems/letter-case-permutation/
+- Balanced Parentheses (hard) https://leetcode.com/problems/generate-parentheses/
+- Unique Generalized Abbreviations (hard) https://leetcode.com/problems/generalized-abbreviation/
+- Problem Challenge 1 - Evaluate Expression (hard) https://leetcode.com/problems/different-ways-to-add-parentheses/
+- Problem Challenge 2 - Structurally Unique Binary Search Trees (hard) https://leetcode.com/problems/unique-binary-search-trees-ii
+- Problem Challenge 3 - Count of Structurally Unique Binary Search Trees (hard) https://leetcode.com/problems/unique-binary-search-trees/
 
-## Pattern 11: Modified Binary Search
+# Pattern 11: Modified Binary Search
 
 As we know, whenever we are given a sorted <b>Array</b> or <b>LinkedList</b> or <b>Matrix</b>, and we are asked to find a certain element, the best algorithm we can use is the <b>Binary Search</b>.
 
-- Order-agnostic Binary Search (easy)
-- Ceiling of a Number (medium) *
-- Next Letter (medium)
-- Number Range (medium) *
-- Search in a Sorted Infinite Array (medium) *
-- Minimum Difference Element (medium)
-- Bitonic Array Maximum (easy)
-- Problem Challenge 1 - Search Bitonic Array (medium)
-- Problem Challenge 2 - Search in Rotated Array (medium) * 
-- Problem Challenge 3 - Rotation Count (medium) *
+### Example Problems
+- Order-agnostic Binary Search (easy) https://betterprogramming.pub/three-smart-ways-to-use-binary-search-in-coding-interviews-250ba296cb82
+- Ceiling of a Number (medium) https://www.geeksforgeeks.org/ceiling-in-a-sorted-array/
+- Next Letter (medium) https://leetcode.com/problems/find-smallest-letter-greater-than-target/
+- Number Range (medium) https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+- Search in a Sorted Infinite Array (medium) https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/
+- Minimum Difference Element (medium) https://leetcode.com/problems/find-k-closest-elements/
+- Bitonic Array Maximum (easy) https://www.geeksforgeeks.org/find-the-maximum-element-in-an-array-which-is-first-increasing-and-then-decreasing/
+- Problem Challenge 1 - Search Bitonic Array (medium) https://www.geeksforgeeks.org/find-element-bitonic-array/
+- Problem Challenge 2 - Search in Rotated Array (medium) https://leetcode.com/problems/search-in-rotated-sorted-array/, https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+- Problem Challenge 3 - Rotation Count (medium) https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/, https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
 
-## Pattern 12: Bitwise XOR
+# Pattern 12: Bitwise XOR
 
-<b>XOR</b> is a logical bitwise operator that returns `0` (false) if both bits are the same and returns `1` (true) otherwise. In other words, it only returns `1` if exactly one bit is set to `1` out of the two bits in comparison.
+Exclusive-Or returns a bit value of 1 if both bits are of opposite (different) nature, otherwise Exclusive-OR returns 0. 
 
-- Single Number (easy)
-- Two Single Numbers (medium) *
-- Complement of Base 10 Number (medium)
+````
+	0000		
+  ^	0000
+  -------
+  	0000
+==============================
+  	1111		
+  ^	0000
+  -------
+  	1111
+==============================
+  	1111		
+  ^	1111
+  -------
+  	0000
+==============================
+  	1100		
+  ^	1010
+  -------
+  	0110
+````
+
+ If you take XOR of a number with 0 (zero), it would return the same number again.
+
+```
+x = 4 => 100
+y = 2 => 010
+
+x ^ 0 => 100 ^ 000 => x
+6 ^ 0 = 6
+```
+
+If you take XOR of a number with itself, it would return 0 (zero).
+
+```psuedocode
+x = 4 => 100
+y = 2 => 010
+
+x ^ x => 100 ^ 100 => 0
+6 ^ 6 = 0
+```
+
+**Example:**
+
+1. We can swap the values of two variables without using any third (temp).
+
+   ```
+   a = 5
+   b = 10
+   
+   a = a ^ b (a = 5 ^ 10 = 15)
+   b = a ^ b (b = 15 ^ 10 = 5)
+   a = a ^ b (a = 15 ^ 5 = 10)
+   ```
+
+2. Toggling(flipping) the k-th bit (from right) of a binary number:
+
+   ```
+   Let  n = 27, k = 3
+   we can use: n ^ (1 << (k-1))
+   11011 ^ (00001 << 2)
+   11011 ^ (00100)
+   11111
+   ```
+
+3.  Find the missing number from the list of numbers:
+
+   **Question:** You are given a list of `n-1` integers, and these integers are in the range of `1` to `n`. There are no duplicates in the list. One of the integers is missing in the list, now, we need to find that missing number.
+
+   *<u>Method 1</u>* By finding sum of first `n` natural numbers.
+
+   1. First, find the sum of all number from 1 to n.
+   2. Subtract all the element of the given list from the sum, and we'll give the missing number.
+
+   > There might be an integer overflow while adding large numbers.
+
+   *<u>Method 2</u>* Using XOR operator
+
+   1. Take the XOR of all numbers 1 to n.
+
+   2. Take XOR of all elements of the given array.
+
+   3. XOR of Step 1 and Step 2 will given the required the missing number.
+
+      ```
+      arr = [4, 2, 1, 6, 8, 5, 3, 9]
+      n = 9
+      
+      step1_result = 1 ^ 2 ^ 3 ^ 4 ^ 5 ^ 6 ^ 7 ^ 8 ^ 9
+      step2_result = 4 ^ 2 ^ 1 ^ 6 ^ 8 ^ 5 ^ 3 ^ 9
+      
+      final_result = step1_result ^ step2_result = 7
+      
+      final_result 
+      = (1 ^ 2 ^ 3 ^ 4 ^ 5 ^ 6 ^ 7 ^ 8 ^ 9) ^ (4 ^ 2 ^ 1 ^ 6 ^ 8 ^ 5 ^ 3 ^ 9) 
+      = (1 ^ 1) ^ (2 ^ 2) ^ (3 ^ 3) ^ (4 ^ 4) ^ (5 ^ 5) ^ (6 ^ 6) ^ (7) ^ (8 ^ 8) ^ (9 ^ 9)
+      = 0 ^ 0 ^ 0 ^ 0 ^ 0 ^ 0 ^ 7 ^ 0 ^ 0
+      = 7 (required result)
+      ```
+
+   4. Construct an array from XOR of all elements of the array except element at same index.
+
+      > Given an array A[] having `n` positive elements. The task is to create an another array B[] such as B[i] is XOR of all elements of the array A[] except A[i].
+
+      *Method 1:* Using `XOR` operator `O(N)`
+
+      1. Find XOR of all elements of the given array.
+      2. Now, for each element of A[], calculate A[i] = step1_result ^ A[i]  
+
+````
+arr = [4, 1, 2, 6, 8, 5, 3, 9]
+step1_result = 4 ^ 1 ^ 2 ^ 6 ^ 8 ^ 5 ^ 3 ^ 9
+````
+
+### Example Problems
+- Single Number (easy) https://leetcode.com/problems/single-number/
+- Two Single Numbers (medium) https://leetcode.com/problems/single-number-iii/
+- Complement of Base 10 Number (medium) https://leetcode.com/problems/number-complement/
 - Problem Challenge 1
 
 ## Pattern 13: Top 'K' Elements
