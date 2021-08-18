@@ -121,17 +121,17 @@ function isPairSum(A[], arrayLength, targetSum)
 Time Complexity: **O(N)**
 
 ### Example Problems
-- Pair with Target Sum (easy) https://leetcode.com/problems/two-sum/
-- Remove Duplicates (easy) https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-- Squaring a Sorted Array (easy) https://leetcode.com/problems/squares-of-a-sorted-array/
-- Triplet Sum to Zero (medium) https://leetcode.com/problems/3sum/
-- Triplet Sum Close to Target (medium) https://leetcode.com/problems/3sum-closest/
-- Triplets with Smaller Sum (medium) https://leetcode.com/problems/3sum-smaller/
-- Subarrays with Product Less than a Target (medium) https://leetcode.com/problems/subarray-product-less-than-k/
-- Dutch National Flag Problem (medium) https://leetcode.com/problems/sort-colors/
-- Problem Challenge 1 - Quadruple Sum to Target (medium) https://leetcode.com/problems/4sum/
-- Problem Challenge 2 - Comparing Strings containing Backspaces (medium) https://leetcode.com/problems/backspace-string-compare/
-- Problem Challenge 3 - Minimum Window Sort (medium) https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
+- [ ] Pair with Target Sum (easy) https://leetcode.com/problems/two-sum/
+- [ ] Remove Duplicates (easy) https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+- [ ] Squaring a Sorted Array (easy) https://leetcode.com/problems/squares-of-a-sorted-array/
+- [ ] Triplet Sum to Zero (medium) https://leetcode.com/problems/3sum/
+- [ ] Triplet Sum Close to Target (medium) https://leetcode.com/problems/3sum-closest/
+- [ ] Triplets with Smaller Sum (medium) https://leetcode.com/problems/3sum-smaller/
+- [x] Subarrays with Product Less than a Target (medium) https://leetcode.com/problems/subarray-product-less-than-k/
+- [ ] Dutch National Flag Problem (medium) https://leetcode.com/problems/sort-colors/
+- [ ] Problem Challenge 1 - Quadruple Sum to Target (medium) https://leetcode.com/problems/4sum/
+- [ ] Problem Challenge 2 - Comparing Strings containing Backspaces (medium) https://leetcode.com/problems/backspace-string-compare/
+- [ ] Problem Challenge 3 - Minimum Window Sort (medium) https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 
 # Pattern 3: Fast & Slow pointers
 
