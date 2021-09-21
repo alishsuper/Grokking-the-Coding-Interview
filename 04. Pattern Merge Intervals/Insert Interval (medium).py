@@ -23,28 +23,38 @@ Explanation: After insertion, since [1,4] overlaps with [2,3], we merged them in
 
 
 #mycode
-def insert(intervals, new_interval):
-  merged = []
-  # TODO: Write your code here
-  index=0
-  for i in range(len(intervals)):
+def insert(self, intervals, newInterval):
+    """
+    :type intervals: List[List[int]]
+    :type newInterval: List[int]
+    :rtype: List[List[int]]
+    """
+    idx = self.findInsertPosition(intervals, newInterval)
+    intervals = self.insertInterval(intervals, newInterval, idx)
+    return self.mergeIntervals(intervals)
     
-    if intervals[i][1] < new_interval[0]:
-      merged.append(intervals[i])
-    
-    if intervals[i][0] <= new_interval[1] and intervals[i][1] >= new_interval[0]:
-      new_interval[0]=min(new_interval[0],intervals[i][0])
-      new_interval[1]=max(new_interval[1],intervals[i][1])
-      index = i
+def findInsertPosition(self, intervals, new_interval):
+    start_new = new_interval[0]
+    for idx, (start, _) in enumerate(intervals):
+        if start_new <= start:
+            return idx
+    return -1
 
-    if intervals[i][0] > new_interval[1]:
-      if i==index+1:
-        merged.append(new_interval)
-        new_interval=[-1,-1]
-      merged.append(intervals[i])
-  if new_interval != [-1,-1]:
-    merged.append(new_interval)
-  return merged
+def insertInterval(self, intervals, new_interval, idx):
+    if idx == -1:
+        intervals.append(new_interval)
+    else:
+        intervals.insert(idx, new_interval)
+    return intervals
+
+def mergeIntervals(self, intervals):
+    merged = []
+    for i, (start, end) in enumerate(intervals):
+        if not merged or merged[-1][1] < start:
+            merged.append(intervals[i])
+        else:
+            merged[-1][1] = max(merged[-1][1], end)
+    return merged
 
 
 def main():
