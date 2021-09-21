@@ -167,7 +167,7 @@ Understanding the above six cases will help us in solving all intervals related 
 
 ### Example Problems
 - Merge Intervals (medium) https://leetcode.com/problems/merge-intervals/
-- Insert Interval (medium) https://leetcode.com/problems/insert-interval/
+- [x] Insert Interval (medium) https://leetcode.com/problems/insert-interval/
 - Intervals Intersection (medium) https://leetcode.com/problems/interval-list-intersections/
 - Conflicting Appointments (medium) https://leetcode.com/problems/meeting-rooms/
 - Problem Challenge 1 - Minimum Meeting Rooms (hard) https://leetcode.com/problems/meeting-rooms-ii/
