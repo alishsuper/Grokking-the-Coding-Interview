@@ -72,7 +72,7 @@ Dead giveaway:
 - [ ] Smallest Subarray with a given sum (easy) https://leetcode.com/problems/minimum-size-subarray-sum/
 - [ ] Longest Substring with K Distinct Characters (medium) https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
 - [x] Fruits into Baskets (medium) https://leetcode.com/problems/fruit-into-baskets/
-- [ ] No-repeat Substring (hard) * https://leetcode.com/problems/longest-substring-without-repeating-characters/
+- [x] No-repeat Substring (hard) * https://leetcode.com/problems/longest-substring-without-repeating-characters/
 - [ ] Longest Substring with Same Letters after Replacement (hard) https://leetcode.com/problems/longest-repeating-character-replacement/
 - [ ] Longest Subarray with Ones after Replacement (hard) * https://leetcode.com/problems/max-consecutive-ones-iii/
 - [ ] Problem Challenge 1 - Permutation in a String (hard) * https://leetcode.com/problems/permutation-in-string/
