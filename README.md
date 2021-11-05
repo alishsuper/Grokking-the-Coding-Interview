@@ -131,7 +131,7 @@ Time Complexity: **O(N)**
 - [ ] Dutch National Flag Problem (medium) https://leetcode.com/problems/sort-colors/
 - [ ] Problem Challenge 1 - Quadruple Sum to Target (medium) https://leetcode.com/problems/4sum/
 - [ ] Problem Challenge 2 - Comparing Strings containing Backspaces (medium) https://leetcode.com/problems/backspace-string-compare/
-- [ ] Problem Challenge 3 - Minimum Window Sort (medium) https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
+- [x] Problem Challenge 3 - Minimum Window Sort (medium) https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 
 # Pattern 3: Fast & Slow pointers
 
