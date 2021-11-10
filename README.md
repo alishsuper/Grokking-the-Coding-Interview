@@ -166,7 +166,7 @@ Understanding the above six cases will help us in solving all intervals related 
 ![](mergeintervals.png)
 
 ### Example Problems
-- [ ] Merge Intervals (medium) https://leetcode.com/problems/merge-intervals/
+- [x] Merge Intervals (medium) https://leetcode.com/problems/merge-intervals/
 - [x] Insert Interval (medium) https://leetcode.com/problems/insert-interval/
 - [ ] Intervals Intersection (medium) https://leetcode.com/problems/interval-list-intersections/
 - [ ] Conflicting Appointments (medium) https://leetcode.com/problems/meeting-rooms/
