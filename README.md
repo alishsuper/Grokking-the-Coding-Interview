@@ -142,13 +142,13 @@ By moving at different speeds (say, in a cyclic LinkedList), the algorithm prove
 One of the famous problems solved using this technique was <b>Finding a cycle in a LinkedList</b>. Let’s jump onto this problem to understand the <b>Fast & Slow</b> pattern.
 
 ### Example Problems
-- LinkedList Cycle (easy) https://leetcode.com/problems/linked-list-cycle/
-- Middle of the LinkedList (easy) https://leetcode.com/problems/middle-of-the-linked-list/
-- Start of LinkedList Cycle (medium) https://leetcode.com/problems/linked-list-cycle-ii/
-- Happy Number (medium) https://leetcode.com/problems/happy-number/
-- Problem Challenge 1 - Palindrome LinkedList (medium) https://leetcode.com/problems/palindrome-linked-list/
-- Problem Challenge 2 - Rearrange a LinkedList (medium) https://leetcode.com/problems/reorder-list/
-- Problem Challenge 3 - Cycle in a Circular Array (hard) https://leetcode.com/problems/circular-array-loop/
+- [ ] LinkedList Cycle (easy) https://leetcode.com/problems/linked-list-cycle/
+- [ ] Middle of the LinkedList (easy) https://leetcode.com/problems/middle-of-the-linked-list/
+- [ ] Start of LinkedList Cycle (medium) https://leetcode.com/problems/linked-list-cycle-ii/
+- [ ] Happy Number (medium) https://leetcode.com/problems/happy-number/
+- [x] Problem Challenge 1 - Palindrome LinkedList (medium) https://leetcode.com/problems/palindrome-linked-list/
+- [ ] Problem Challenge 2 - Rearrange a LinkedList (medium) https://leetcode.com/problems/reorder-list/
+- [ ] Problem Challenge 3 - Cycle in a Circular Array (hard) https://leetcode.com/problems/circular-array-loop/
 
 # Pattern 4: Merge Intervals
 
@@ -166,13 +166,13 @@ Understanding the above six cases will help us in solving all intervals related 
 ![](mergeintervals.png)
 
 ### Example Problems
-- Merge Intervals (medium) https://leetcode.com/problems/merge-intervals/
+- [ ] Merge Intervals (medium) https://leetcode.com/problems/merge-intervals/
 - [x] Insert Interval (medium) https://leetcode.com/problems/insert-interval/
-- Intervals Intersection (medium) https://leetcode.com/problems/interval-list-intersections/
-- Conflicting Appointments (medium) https://leetcode.com/problems/meeting-rooms/
-- Problem Challenge 1 - Minimum Meeting Rooms (hard) https://leetcode.com/problems/meeting-rooms-ii/
-- Problem Challenge 2 - Maximum CPU Load (hard) https://leetcode.com/discuss/interview-question/algorithms/124554/Find-Max-Bandwidth
-- Problem Challenge 3 - Employee Free Time (hard) https://leetcode.com/problems/employee-free-time/
+- [ ] Intervals Intersection (medium) https://leetcode.com/problems/interval-list-intersections/
+- [ ] Conflicting Appointments (medium) https://leetcode.com/problems/meeting-rooms/
+- [ ] Problem Challenge 1 - Minimum Meeting Rooms (hard) https://leetcode.com/problems/meeting-rooms-ii/
+- [ ] Problem Challenge 2 - Maximum CPU Load (hard) https://leetcode.com/discuss/interview-question/algorithms/124554/Find-Max-Bandwidth
+- [ ] Problem Challenge 3 - Employee Free Time (hard) https://leetcode.com/problems/employee-free-time/
 
 # Pattern 5: Cyclic Sort
 
